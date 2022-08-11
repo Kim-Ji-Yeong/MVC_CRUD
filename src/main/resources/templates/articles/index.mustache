@@ -1,0 +1,25 @@
+{{>layouts/header}}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>CONTENT</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#articles}}
+        <tr>
+            <td><a href="/articles/{{id}}">{{id}}</a></td>
+            <td><a href="/articles/{{id}}">{{title}}</a></td>
+            <td><a href="/articles/{{id}}">{{content}}</a></td>
+        </tr>
+    {{/articles}}
+
+    </tbody>
+
+</table>
+<a href="/articles/new" class="btn btn-primary">작성</a>
+
+{{>layouts/footer}}

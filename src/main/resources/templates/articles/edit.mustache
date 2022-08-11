@@ -1,0 +1,16 @@
+{{>layouts/header}}
+
+<form action="/articles/update" method="post">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">TITLE</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="제목을 입력하세요" name="title" value="{{article.title}}">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">CONTENT</label>
+        <textarea type="text" name="content" class="form-control" id="formGroupExampleInput2" placeholder="내용을 입력하세요">{{article.content}}</textarea>
+    </div>
+    <button class="btn btn-primary">수정</button>
+</form>
+
+
+{{>layouts/footer}}
